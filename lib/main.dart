@@ -13,19 +13,27 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue[300],
         body: SafeArea(
-          child: Column(children: <Widget>[
-            CircleAvatar(
-              radius: 50,
-              backgroundColor: Colors.blue[200],
-              backgroundImage: NetworkImage(
-                  'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                CircleAvatar(
+                  radius: 50,
+                  backgroundColor: Colors.blue[200],
+                  backgroundImage: NetworkImage(
+                      'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'),
+                ),
+                Text(
+                  "Baby Yoda",
+                  style: GoogleFonts.lobster(color: Colors.white, fontSize: 24),
+                ),
+                Text(
+                  "Flutter Mobile Developer",
+                  style: GoogleFonts.lato(color: Colors.white, fontSize: 18),
+                ),
+              ],
             ),
-            Text(
-              "Baby Yoda",
-              style:
-                  GoogleFonts.lobster(color: Colors.indigo[900], fontSize: 40),
-            )
-          ]),
+          ),
         ),
       ),
     );
