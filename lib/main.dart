@@ -28,8 +28,35 @@ class MyApp extends StatelessWidget {
                   style: GoogleFonts.lobster(color: Colors.white, fontSize: 24),
                 ),
                 Text(
-                  "Flutter Mobile Developer",
+                  "FLUTTER MOBILE DEVELOPER",
                   style: GoogleFonts.lato(color: Colors.white, fontSize: 18),
+                ),
+                SizedBox(
+                  width: 150,
+                  height: 20,
+                  child: Divider(color: Colors.blue[100]),
+                ),
+                Card(
+                  color: Colors.blue[100],
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  child: ListTile(
+                      leading: Icon(Icons.phone, color: Colors.blue[900]),
+                      title: Text(
+                        '(123) 867-5309',
+                        style: GoogleFonts.lato(color: Colors.blue[900]),
+                      )),
+                ),
+                Card(
+                  color: Colors.blue[100],
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  child: ListTile(
+                    leading:
+                        (Icon(Icons.mail_outline, color: Colors.blue[900])),
+                    title: Text(
+                      'baby_yoda@starwars.com',
+                      style: GoogleFonts.lato(color: Colors.blue[900]),
+                    ),
+                  ),
                 ),
               ],
             ),
